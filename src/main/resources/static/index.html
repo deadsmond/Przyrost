@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/basic.css" rel="stylesheet" media="screen">
+</head>
+<body>
+	<div>	<h1> Przyrost III Console </h1> </div>
+	<div>
+		<h2> Citizens </h2>
+
+		<form action="http://0.0.0.0:8080/citizens"  method="get">
+		    <input type="submit" value="Get all citizens"/>
+		</form>
+
+		<form action="http://0.0.0.0:8080/citizens/stat"  method="get">
+		    <input type="submit" value="Get citizens stat"/>
+		</form>
+
+		<form action="http://0.0.0.0:8080/citizens">
+
+		    <input type="text" name="PESEL" value="12345678977" />
+		    <input type="text" name="name" value="Patrick" />
+		    <input type="text" name="surname" value="Star" />
+		    <input type="text" name="birthday" value="1-2-2000" />
+		    <input type="radio" name="sex" value="m" checked> Male
+		    <input type="radio" name="sex" value="k"> Female<br>
+
+		    <input type="submit" formmethod="post" value="Post citizen"/>
+		    <input type="submit" formmethod="put" value="Put citizen"/>
+		    <input type="submit" formmethod="delete" value="Delete citizen"/>
+
+		</form>
+	</div>
+	<div>
+		<h2> Address </h2>
+
+		<form action="http://0.0.0.0:8080/address"  method="get">
+		    <input type="submit" value="Get all addresses"/>
+		</form>
+
+		<form action="http://0.0.0.0:8080/address/stat"  method="get">
+		    <input type="submit" value="Get addresses stat"/>
+		</form><br>
+
+		<form action="http://0.0.0.0:8080/address">
+
+		    <input type="text" name="city" value="Warszawa" />
+		    <input type="text" name="street" value="Aleje Jerozolimskie" />
+		    <input type="text" name="number" value="13" />
+		    <input type="text" name="apartment" value="5" /><br>
+
+		    <input type="submit" formmethod="post" value="Post address"/>
+		    <input type="submit" formmethod="put" value="Put address"/>
+		    <input type="submit" formmethod="delete" value="Delete address"/>
+
+		</form>
+	</div>
+	<div>
+		<h2> Partners </h2>
+
+		<form action="http://0.0.0.0:8080/partners"  method="get">
+		    <input type="submit" value="Get all partners"/>
+		</form>
+
+		<form action="http://0.0.0.0:8080/partners/stat"  method="get">
+		    <input type="submit" value="Get partners stat"/>
+		</form><br>
+
+		<form action="http://0.0.0.0:8080/partners">
+
+		    <input type="text" name="PESEL1" value="12345678914" />
+		    <input type="text" name="PESEL2" value="12345678915" /><br>
+
+		    <input type="submit" formmethod="post" value="Post partners"/>
+		    <input type="submit" formmethod="put" value="Put partners"/>
+		    <input type="submit" formmethod="delete" value="Delete partners"/>
+
+		</form>
+	</div>
+	<div>
+		<h2> Estate </h2>
+
+		<form action="http://0.0.0.0:8080/estate"  method="get">
+		    <input type="submit" value="Get all estates"/>
+		</form>
+
+		<form action="http://0.0.0.0:8080/estate/stat"  method="get">
+		    <input type="submit" value="Get estates stat"/>
+		</form>
+		<br>
+		<form action="http://0.0.0.0:8080/estate">
+
+		    <input type="text" name="PESEL" value="12345678910" />
+		    <input type="text" name="addid" value="1" />
+		    <br>
+
+		    <input type="submit" formmethod="post" value="Post estate"/>
+		    <input type="submit" formmethod="put" value="Put estate"/>
+		    <input type="submit" formmethod="delete" value="Delete estate"/>
+
+		</form>
+	</div>
+	<div>
+		<h2> Workers </h2>
+
+		<form action="http://0.0.0.0:8080/workers"  method="get">
+		    <input type="submit" value="Get all workers"/>
+		</form>
+
+		<form action="http://0.0.0.0:8080/workers/stat"  method="get">
+		    <input type="submit" value="Get workers stat"/>
+		</form>
+		<br>
+		<form action="http://0.0.0.0:8080/workers">
+
+		    <input type="text" name="PESEL" value="12345678914" />
+		    <input type="text" name="NIP" value="123aa" />
+		    <br>
+
+		    <input type="submit" formmethod="post" value="Post workers"/>
+		    <input type="submit" formmethod="put" value="Put workers"/>
+		    <input type="submit" formmethod="delete" value="Delete workers"/>
+
+		</form>
+	</div>
+	<div>
+		<h2> Locations </h2>
+
+		<form action="http://0.0.0.0:8080/location"  method="get">
+		    <input type="submit" value="Get all locations"/>
+		</form>
+
+		<form action="http://0.0.0.0:8080/location/stat"  method="get">
+		    <input type="submit" value="Get locations stat"/>
+		</form>
+		<br>
+		<form action="http://0.0.0.0:8080/location">
+
+		    <input type="text" name="PESEL" value="12345678914" />
+		    <input type="text" name="addid" value="1" />
+		    <br>
+
+		    <input type="submit" formmethod="post" value="Post location"/>
+		    <input type="submit" formmethod="put" value="Put location"/>
+		    <input type="submit" formmethod="delete" value="Delete location"/>
+
+		</form>
+	</div>
+	<div>
+		<h2> Firm </h2>
+
+		<form action="http://0.0.0.0:8080/firm"  method="get">
+		    <input type="submit" value="Get all firms"/>
+		</form>
+
+		<form action="http://0.0.0.0:8080/firm/stat"  method="get">
+		    <input type="submit" value="Get firms stat"/>
+		</form>
+		<br>
+		<form action="http://0.0.0.0:8080/firm">
+
+		    <input type="text" name="NIP" value="123" />
+		    <input type="text" name="name" value="CoolKids Company" />
+		    <input type="text" name="addid" value="1" />
+		    <br>
+
+		    <input type="submit" formmethod="post" value="Post firm"/>
+		    <input type="submit" formmethod="put" value="Put firm"/>
+		    <input type="submit" formmethod="delete" value="Delete firm"/>
+
+		</form>
+	</div>
+	<div>
+		<h2> Divisions </h2>
+
+		<form action="http://0.0.0.0:8080/divisions"  method="get">
+		    <input type="submit" value="Get all divisions"/>
+		</form>
+
+		<form action="http://0.0.0.0:8080/divisions/stat"  method="get">
+		    <input type="submit" value="Get divisions stat"/>
+		</form>
+		<br>
+		<form action="http://0.0.0.0:8080/divisions">
+
+		    <input type="text" name="NIP" value="123aa" />
+		    <input type="text" name="addid" value="2" />
+		    <br>
+
+		    <input type="submit" formmethod="post" value="Post division"/>
+		    <input type="submit" formmethod="put" value="Put division"/>
+		    <input type="submit" formmethod="delete" value="Delete division"/>
+
+		</form>
+	</div>
+	 <footer><p class="copyright">@Adam Lewicki</p></footer>
+</body>
+</html>
+
+
+
